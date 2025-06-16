@@ -4,6 +4,7 @@ cachetools==5.5.2
 certifi==2025.4.26
 chardet==5.2.0
 charset-normalizer==3.4.2
+dj-database-url==3.0.0
 Django==5.2.1
 django-cors-headers==4.7.0
 djangorestframework==3.16.0
@@ -16,11 +17,13 @@ google-auth-oauthlib==1.2.2
 googleapis-common-protos==1.70.0
 grpcio==1.72.1
 grpcio-status==1.72.1
+gunicorn==23.0.0
 idna==3.10
 mysqlclient==2.2.7
 numpy==2.2.6
 oauthlib==3.2.2
 openpyxl==3.1.5
+packaging==25.0
 pandas==2.3.0
 pillow==11.2.1
 proto-plus==1.26.1

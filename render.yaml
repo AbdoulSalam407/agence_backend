@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: agence-backend
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn agence_backend.wsgi:application"
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: agence_backend.settings
+      - key: DATABASE_URL
+        value: mysql://utilisateur:motdepasse@mysql-abdoul-salam-diallo.alwaysdata.net:3306/abdoul-salam-diallo_agence_immobiliere
+      - key: SECRET_KEY
+        value: "change_this_to_a_real_secret_key"
+      - key: DEBUG
+        value: "False"
